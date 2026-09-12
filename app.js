@@ -2,56 +2,34 @@ const experience = [
   {
     company: "PhrasIQ",
     title: "Software Engineer Intern",
-    date: "Jul 2026 — Present",
-    note: "Production engineering for an enterprise AI finance platform.",
   },
   {
     company: "Circuit Launch",
     title: "Full Stack Engineer Intern in Residence",
-    date: "Jun 2026 — Jul 2026",
-    note: "Full-stack systems for physical intelligence and robotics.",
   },
   {
     company: "Unicage",
     title: "Blockchain Developer",
-    date: "Aug 2025 — May 2026",
-    note: "Return offer; scaling prototypes and large-scale Web3 integrations.",
-  },
-  {
-    company: "Unicage",
-    title: "Blockchain Development Intern",
-    date: "Jun 2025 — Aug 2025",
-    note: "Decentralized AI infrastructure and crypto payments.",
   },
   {
     company: "Santa Clara University",
     title: "Lead Lab Researcher",
-    date: "Jan 2025 — May 2026",
-    note: "Open Spaces AI and environmental computing research.",
   },
   {
     company: "Santa Clara University",
     title: "AI & Software Engineering Researcher",
-    date: "Jun 2025 — Jan 2026",
-    note: "Multimodal learning systems and applied AI research.",
   },
   {
     company: "Elytra Robotics",
     title: "Software Engineer Intern",
-    date: "Apr 2025 — May 2025",
-    note: "Robotics software engineering internship.",
   },
   {
     company: "Berkeley Lab",
     title: "Data Analyst Intern",
-    date: "Jun 2022 — Jun 2023",
-    note: "Watershed SFA, geospatial data, and machine learning.",
   },
   {
     company: "San Jose State University",
     title: "Graduate Research Assistant",
-    date: "Jun 2022 — Oct 2022",
-    note: "Environmental regulations and legal-trends research.",
   },
 ];
 
@@ -191,11 +169,7 @@ document.querySelector("#experience-list").innerHTML = experience
   .map((role) => `
     <article class="role">
       <h3 class="role__company">${escapeHtml(role.company)}</h3>
-      <div class="role__details">
-        <h3 class="role__title">${escapeHtml(role.title)}</h3>
-        <p class="role__note">${escapeHtml(role.note)}</p>
-      </div>
-      <time class="role__date">${escapeHtml(role.date)}</time>
+      <h3 class="role__title">${escapeHtml(role.title)}</h3>
     </article>`)
   .join("");
 
