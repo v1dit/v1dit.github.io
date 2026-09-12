@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Vidit Agarwal — software engineer, researcher, and 6x hackathon winner studying Computer Science and Mathematics at UC San Diego."
+    />
+    <meta property="og:title" content="Vidit Agarwal" />
+    <meta
+      property="og:description"
+      content="Software engineer, researcher, and 6x hackathon winner."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://v1dit.github.io/" />
+    <link rel="canonical" href="https://v1dit.github.io/" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="ico.js" defer></script>
+    <script src="app.js" defer></script>
+    <title>Vidit Agarwal</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#content">Skip to content</a>
+
+    <header class="hero" aria-labelledby="site-title">
+      <pre id="canvas" aria-hidden="true"></pre>
+      <div class="hero__content reveal">
+        <p class="eyebrow">portfolio / 2026</p>
+        <h1 id="site-title">Vidit Agarwal</h1>
+        <p class="hero__line">software engineer · researcher · <strong>6× hackathon winner</strong></p>
+
+        <nav class="primary-links" aria-label="Primary links">
+          <a class="reactive-link" href="resume.pdf" target="_blank" rel="noreferrer">résumé <span aria-hidden="true">↗</span></a>
+          <a class="reactive-link" href="https://github.com/v1dit" target="_blank" rel="noreferrer">github <span aria-hidden="true">↗</span></a>
+          <a class="reactive-link" href="https://www.linkedin.com/in/viditagarwal-/" target="_blank" rel="noreferrer">linkedin <span aria-hidden="true">↗</span></a>
+          <a class="reactive-link" href="mailto:vidit3035@gmail.com">vidit3035@gmail.com <span aria-hidden="true">↗</span></a>
+        </nav>
+      </div>
+
+      <div class="scroll-note" aria-hidden="true">
+        <span>scroll</span>
+        <i></i>
+      </div>
+    </header>
+
+    <main id="content">
+      <section class="section reveal" aria-labelledby="school-heading">
+        <div class="section__number" aria-hidden="true">01</div>
+        <div class="section__body">
+          <h2 id="school-heading">School</h2>
+          <div class="school-row">
+            <div>
+              <h3>University of California, San Diego</h3>
+              <p>Computer Science &amp; Mathematics</p>
+            </div>
+            <p class="meta">Expected June 2028<br />San Diego, California</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section reveal" aria-labelledby="experience-heading">
+        <div class="section__number" aria-hidden="true">02</div>
+        <div class="section__body">
+          <h2 id="experience-heading">Experience</h2>
+          <div id="experience-list" class="timeline"></div>
+        </div>
+      </section>
+
+      <section class="section reveal" aria-labelledby="wins-heading">
+        <div class="section__number" aria-hidden="true">03</div>
+        <div class="section__body">
+          <div class="section-heading-row">
+            <h2 id="wins-heading">Hackathon record</h2>
+            <span class="count" aria-label="Six placements">06</span>
+          </div>
+          <div id="awards-list" class="awards-grid"></div>
+        </div>
+      </section>
+
+      <section class="section reveal" aria-labelledby="projects-heading">
+        <div class="section__number" aria-hidden="true">04</div>
+        <div class="section__body">
+          <h2 id="projects-heading">Projects</h2>
+          <div id="featured-projects" class="project-list"></div>
+
+          <details class="project-disclosure">
+            <summary>
+              <span>All projects</span>
+              <span class="summary-meta"><span id="project-count"></span> selected works <i aria-hidden="true"></i></span>
+            </summary>
+            <div id="all-projects" class="all-projects"></div>
+          </details>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer reveal">
+      <p>Built by Vidit Agarwal.</p>
+      <p>San Jose, California · <span id="year"></span></p>
+    </footer>
+  </body>
+</html>
