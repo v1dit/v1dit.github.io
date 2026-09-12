@@ -160,24 +160,6 @@ const projects = [
     url: "https://github.com/v1dit/networking-agent",
   },
   {
-    name: "Voyagent API",
-    description: "Natural-language flight search across multiple travel data sources.",
-    stack: "Python · APIs · NLP",
-    url: "https://github.com/v1dit/voyagent-api",
-  },
-  {
-    name: "YC Voice Agents",
-    description: "On-device voice-agent experiment built with Gemma.",
-    stack: "Voice · Gemma · Agents",
-    url: "https://github.com/v1dit/yc-voice-agents-hack",
-  },
-  {
-    name: "Zplit",
-    description: "Simple payment splitting for groups.",
-    stack: "Payments · Full stack",
-    url: "https://github.com/v1dit/Zplit",
-  },
-  {
     name: "Voyagent",
     description: "Early intelligent travel-search prototype.",
     stack: "Python · Travel",
