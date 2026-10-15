@@ -1,35 +1,33 @@
 const experience = [
   {
     company: "PhrasIQ",
-    title: "Software Engineer Intern",
+    title: "Software Engineering Intern",
+    date: "Jul 2026 – Present",
+  },
+  {
+    company: "DS3 Consulting",
+    title: "Software Engineering Consultant · Current client: JPMorgan",
+    date: "Fall 2026 – Present",
   },
   {
     company: "Circuit Launch",
-    title: "Full Stack Engineer Intern in Residence",
+    title: "Full-Stack Engineering Intern",
+    date: "Jun 2026 – Sep 2026",
   },
   {
     company: "Unicage",
     title: "Blockchain Developer",
+    date: "Jun 2025 – May 2026",
   },
   {
     company: "Santa Clara University",
     title: "Lead Lab Researcher",
-  },
-  {
-    company: "Santa Clara University",
-    title: "AI & Software Engineering Researcher",
-  },
-  {
-    company: "Elytra Robotics",
-    title: "Software Engineer Intern",
+    date: "Jan 2025 – Jun 2026",
   },
   {
     company: "Berkeley Lab",
     title: "Data Analyst Intern",
-  },
-  {
-    company: "San Jose State University",
-    title: "Graduate Research Assistant",
+    date: "Jun 2022 – Aug 2023",
   },
 ];
 
@@ -53,7 +51,7 @@ const awards = [
     url: "https://github.com/kgarg2468/kiro-nozomio-hack",
   },
   {
-    title: "Top 4 · AWS Building the Next YC Unicorn",
+    title: "2nd Place · AWS Building the Next YC Unicorn",
     project: "Erevna",
     date: "Apr 2026",
     url: "https://github.com/v1dit/erevna",
@@ -65,7 +63,7 @@ const awards = [
     url: "https://github.com/shlawgathon/BlueDocs",
   },
   {
-    title: "SCU ACM Hackathon Finalist",
+    title: "3rd Place · SCU ACM Hackathon",
     project: "DriveWatch AI",
     date: "Nov 2024",
     url: "https://github.com/v1dit/AWS2024",
@@ -109,7 +107,7 @@ const projects = [
   },
   {
     name: "DriveWatch AI",
-    description: "Computer-vision driver safety project and SCU ACM finalist.",
+    description: "Computer-vision driver safety project and SCU ACM third-place winner.",
     stack: "Python · Computer vision",
     url: "https://github.com/v1dit/AWS2024",
   },
@@ -169,7 +167,10 @@ document.querySelector("#experience-list").innerHTML = experience
   .map((role) => `
     <article class="role">
       <h3 class="role__company">${escapeHtml(role.company)}</h3>
-      <h3 class="role__title">${escapeHtml(role.title)}</h3>
+      <div class="role__details">
+        <h3 class="role__title">${escapeHtml(role.title)}</h3>
+        <p class="role__date">${escapeHtml(role.date)}</p>
+      </div>
     </article>`)
   .join("");
 
