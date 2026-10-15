@@ -294,6 +294,34 @@ h3 {
   color: var(--muted);
 }
 
+.involvement-role {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 16px;
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px solid var(--soft-line);
+}
+
+.involvement-role h4 {
+  margin: 0 0 4px;
+  font-size: 0.98rem;
+  font-weight: 500;
+}
+
+.involvement-role p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.involvement-role .involvement-role__date {
+  color: var(--dim);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-align: right;
+  text-transform: uppercase;
+}
+
 .timeline {
   border-top: 1px solid var(--line);
 }
@@ -576,6 +604,14 @@ details[open] .summary-meta i::after {
   }
 
   .school-row .meta {
+    text-align: left;
+  }
+
+  .involvement-role {
+    grid-template-columns: 1fr;
+  }
+
+  .involvement-role .involvement-role__date {
     text-align: left;
   }
 

@@ -5,11 +5,6 @@ const experience = [
     date: "Jul 2026 – Present",
   },
   {
-    company: "DS3 Consulting",
-    title: "Software Engineering Consultant · Current client: JPMorgan",
-    date: "Fall 2026 – Present",
-  },
-  {
     company: "Circuit Launch",
     title: "Full-Stack Engineering Intern",
     date: "Jun 2026 – Sep 2026",
@@ -25,9 +20,17 @@ const experience = [
     date: "Jan 2025 – Jun 2026",
   },
   {
+    company: "Elytra Robotics",
+    title: "Software Engineer Intern",
+  },
+  {
     company: "Berkeley Lab",
     title: "Data Analyst Intern",
     date: "Jun 2022 – Aug 2023",
+  },
+  {
+    company: "San Jose State University",
+    title: "Graduate Research Assistant",
   },
 ];
 
@@ -169,7 +172,7 @@ document.querySelector("#experience-list").innerHTML = experience
       <h3 class="role__company">${escapeHtml(role.company)}</h3>
       <div class="role__details">
         <h3 class="role__title">${escapeHtml(role.title)}</h3>
-        <p class="role__date">${escapeHtml(role.date)}</p>
+        ${role.date ? `<p class="role__date">${escapeHtml(role.date)}</p>` : ""}
       </div>
     </article>`)
   .join("");
